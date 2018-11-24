@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "100209054988",
+    "firebase_url": "https://tutorialuno-304df.firebaseio.com",
+    "project_id": "tutorialuno-304df",
+    "storage_bucket": "tutorialuno-304df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100209054988:android:62f4c5de586217fa",
+        "android_client_info": {
+          "package_name": "com.example.stuar.tutorialuno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100209054988-h26j81sg621km1kut0b7679ik1laqtna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stuar.tutorialuno",
+            "certificate_hash": "172294c20b94a03d6545ddf11e69f166dbb980f3"
+          }
+        },
+        {
+          "client_id": "100209054988-p4nv7tgch1c9hunn876u9eq7jlj969c3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCDIGp9S11pgvgkUrvbYuawqQse5ExoY8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100209054988-p4nv7tgch1c9hunn876u9eq7jlj969c3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
