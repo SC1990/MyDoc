@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/my_doc_background">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -24,9 +24,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
         android:text="@string/your_medical_history"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -104,7 +104,9 @@
         android:layout_marginStart="-123dp"
         android:layout_marginTop="185dp"
         android:text="@string/medications"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_marginLeft="-123dp" />
 
     <Spinner
         android:id="@+id/spinner2"
@@ -113,7 +115,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="26dp"
-        android:layout_marginBottom="329dp" />
+        android:layout_marginBottom="329dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="26dp" />
 
     <Button
         android:id="@+id/button3"
@@ -127,7 +131,9 @@
         android:text="@string/add"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="22sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_marginRight="8dp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -138,7 +144,9 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="278dp"
         android:text="@string/allergies"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_marginLeft="0dp" />
 
     <Spinner
         android:id="@+id/spinner3"
@@ -147,7 +155,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="238dp" />
+        android:layout_marginBottom="238dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp" />
 
     <Button
         android:id="@+id/button8"
@@ -156,8 +166,8 @@
         android:layout_alignBottom="@+id/textView9"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
         android:layout_marginBottom="0dp"
         android:background="@color/colorAccent"
         android:text="@string/add2"
@@ -174,14 +184,16 @@
         android:layout_marginBottom="198dp"
         android:text="@string/do_you_smoke"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/spinner3" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView10"
-        android:layout_alignEnd="@+id/textView5" />
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignRight="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView11"
@@ -192,7 +204,9 @@
         android:layout_marginStart="-12dp"
         android:layout_marginTop="0dp"
         android:text="@string/date_of_birth"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/spinner3"
+        android:layout_marginLeft="-12dp" />
 
     <EditText
         android:id="@+id/editText7"
@@ -203,7 +217,9 @@
         android:layout_marginStart="-11dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
-        android:inputType="date" />
+        android:inputType="date"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_marginLeft="-11dp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -213,7 +229,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="142dp"
-        android:text="Health issues" />
+        android:text="@string/health_issues"
+        android:layout_alignLeft="@+id/spinner3"
+        android:layout_marginLeft="0dp" />
 
     <View
         android:id="@+id/divider5"
@@ -223,7 +241,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="127dp"
-        android:background="@color/colorAccent" />
+        android:background="@color/colorAccent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp" />
 
     <Spinner
         android:id="@+id/spinner4"
@@ -232,34 +252,39 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="32dp"
-        android:layout_marginBottom="96dp" />
+        android:layout_marginBottom="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="44dp"
         android:layout_height="28dp"
         android:layout_alignEnd="@+id/divider4"
+        android:layout_alignRight="@+id/divider4"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="137dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="143dp"
         android:background="@color/colorAccent"
-        android:text="+"
+        android:text="@string/add1"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="22sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/saveBtn"
         android:layout_width="307dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
         android:layout_marginBottom="28dp"
         android:background="@color/colorAccent"
-        android:text="Save"
+        android:onClick="onSaveBtnClick"
+        android:text="@string/save"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="18sp"
         android:textStyle="bold" />
