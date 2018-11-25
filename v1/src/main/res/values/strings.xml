@@ -34,4 +34,15 @@
     <string name="add2">+</string>
     <string name="do_you_smoke">Do you smoke?</string>
     <string name="date_of_birth">Date of birth</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="health_issues">Health issues</string>
+    <string name="add1">+</string>
+    <string name="save">Save</string>
+    <string name="no_upcoming_appointments">No upcoming appointments</string>
+    <string name="upcoming_appointments2">Upcoming appointments</string>
+    <string name="search_for_a_doctor">Search for a doctor</string>
+    <string name="upcoming_appointments3">upcoming_appointments</string>
+    <string name="no_upcoming_appointments2">no_upcoming_appointments</string>
+    <string name="upcoming_appointmentss">Upcoming appointments</string>
+    <string name="no_upcoming_appointmentsss">No upcoming appointments</string>
 </resources>

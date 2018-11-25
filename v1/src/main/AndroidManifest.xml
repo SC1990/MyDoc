@@ -18,6 +18,11 @@
         </activity>
         <activity android:name=".SignUp"/>
         <activity android:name=".LogIn" />
+        <activity android:name=".BookApp" />
+        <activity android:name=".DocSearch" />
+        <activity android:name=".MedicalHistory" />
+        <activity android:name=".UpcomingApps" />
+        <activity android:name=".UserHome" />
 
     </application>
 

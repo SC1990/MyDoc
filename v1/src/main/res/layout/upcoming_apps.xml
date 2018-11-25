@@ -3,18 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/my_doc_background">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/homeImg2"
         android:layout_width="296dp"
         android:layout_height="195dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="69dp"
+        android:clickable="true"
         app:srcCompat="@drawable/doc_icon" />
 
     <TextView
@@ -24,10 +25,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="74dp"
-        android:layout_marginLeft="74dp"
-        android:layout_marginTop="223dp"
-        android:text="Upcoming appointments"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="270dp"
+        android:text="@string/upcoming_appointmentss"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -37,7 +38,19 @@
         android:layout_height="10dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="263dp"
-        android:background="@color/colorAccent" />
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="309dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="57dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:text="@string/no_upcoming_appointmentsss"
+        android:textStyle="bold" />
 </RelativeLayout>

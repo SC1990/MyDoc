@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/my_doc_background">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="215dp"
-        android:layout_height="229dp"
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/splashGif"
+        android:layout_width="150dp"
+        android:layout_height="139dp"
+        android:layout_above="@+id/splashLogo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/doc"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="63dp" />
 
-        android:contentDescription="@string/splash_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
-        app:srcCompat="@drawable/doc_icon" />
 
     <TextView
         android:id="@+id/splashLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="140dp"
         android:layout_marginLeft="140dp"
+        android:layout_marginBottom="194dp"
         android:text="@string/mydoc"
         android:textAllCaps="false"
         android:textColor="@color/colorAccent"
-        android:textSize="30sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@id/splashGif" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

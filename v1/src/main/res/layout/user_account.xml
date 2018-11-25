@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/my_doc_background">
 
     <ImageView
         android:id="@+id/imageView"
@@ -13,8 +13,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="109dp"
-        android:layout_marginLeft="109dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/todo"
         app:srcCompat="@drawable/doc_icon"
@@ -31,17 +31,22 @@
         android:layout_marginBottom="33dp"
         android:background="@color/colorAccent"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="145dp" />
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="347dp"
+        android:id="@+id/bookAppBtn"
+        android:layout_width="340dp"
         android:layout_height="59dp"
         android:layout_alignEnd="@+id/divider"
+        android:layout_alignRight="@+id/divider"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="221dp"
-        android:layout_marginEnd="-2dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:background="@color/colorAccent"
+        android:onClick="onBookAppBtnClick"
         android:text="@string/book_appointment"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold"
@@ -49,14 +54,17 @@
         tools:layout_editor_absoluteY="183dp" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="347dp"
+        android:id="@+id/medHistoryBtn"
+        android:layout_width="340dp"
         android:layout_height="59dp"
-        android:layout_alignStart="@+id/button4"
+        android:layout_alignStart="@+id/bookAppBtn"
+        android:layout_alignLeft="@+id/bookAppBtn"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginBottom="212dp"
         android:background="@color/colorAccent"
+        android:onClick="onMHBtnClick"
         android:text="@string/medical_history"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold"
@@ -64,14 +72,17 @@
         tools:layout_editor_absoluteY="277dp" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="347dp"
+        android:id="@+id/searchBtn"
+        android:layout_width="340dp"
         android:layout_height="59dp"
         android:layout_alignEnd="@+id/divider"
+        android:layout_alignRight="@+id/divider"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="138dp"
         android:background="@color/colorAccent"
+        android:onClick="onSearchBtnClick"
         android:text="@string/search_doctors"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold"
@@ -79,14 +90,17 @@
         tools:layout_editor_absoluteY="363dp" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="347dp"
+        android:id="@+id/upcomingAppsBtn"
+        android:layout_width="340dp"
         android:layout_height="59dp"
         android:layout_alignEnd="@+id/divider"
+        android:layout_alignRight="@+id/divider"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="65dp"
         android:background="@color/colorAccent"
+        android:onClick="onUpcomingAppsBtnClick"
         android:text="@string/upcoming_appointments"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textStyle="bold"
@@ -97,12 +111,13 @@
         android:id="@+id/divider2"
         android:layout_width="368dp"
         android:layout_height="7dp"
-        android:layout_alignEnd="@+id/button6"
+
         android:layout_alignParentTop="true"
         android:layout_marginTop="138dp"
         android:background="@color/colorAccent"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="531dp" />
+        tools:layout_editor_absoluteY="531dp"
+         />
 
     <TextView
         android:id="@+id/textView2"
