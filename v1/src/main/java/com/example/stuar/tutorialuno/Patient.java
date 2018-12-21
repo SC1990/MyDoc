@@ -1,6 +1,6 @@
 package com.example.stuar.tutorialuno;
 
-public class User {
+public class Patient {
     private int id;
     private String fullName;
     private String username;

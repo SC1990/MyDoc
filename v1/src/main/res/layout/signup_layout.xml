@@ -38,7 +38,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/chooseFullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -50,7 +50,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -62,21 +62,22 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/pWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:drawableLeft="@drawable/pword_icon"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/pWordConfirmation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/chooseFullName"
+        android:layout_alignLeft="@+id/chooseFullName"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="164dp"
         android:drawableLeft="@drawable/confirm_icon"
