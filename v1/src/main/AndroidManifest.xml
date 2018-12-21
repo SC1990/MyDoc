@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.stuar.tutorialuno">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera"
+
+        android:required="true" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/doc_launcher_icon"
@@ -21,9 +27,11 @@
         <activity android:name=".BookApp" />
         <activity android:name=".DocSearch" />
         <activity android:name=".MedicalHistory" />
-        <activity android:name=".UpcomingApps" />
+        <activity android:name=".RecordVideo" />
         <activity android:name=".UserHome" />
 
     </application>
+
+
 
 </manifest>

@@ -32,10 +32,10 @@ public class UserHome extends AppCompatActivity {
         }
     }
 
-    public void onUpcomingAppsBtnClick(View v){
-        if (v.getId() == R.id.upcomingAppsBtn) {
+    public void onRecordBtnClick(View v){
+        if (v.getId() == R.id.recordBtn) {
 
-            Intent i = new Intent(UserHome.this, UpcomingApps.class);
+            Intent i = new Intent(UserHome.this, RecordVideo.class);
             //link user to sign up form
             startActivity(i);
         }

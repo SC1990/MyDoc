@@ -19,9 +19,9 @@
     <string name="book_appointment">Book Appointment</string>
     <string name="medical_history">Medical History</string>
     <string name="search_doctors">Search Doctors</string>
-    <string name="upcoming_appointments">upcoming appointments</string>
+    <string name="upcoming_appointments">Record Video for Doctor</string>
 
-    <string name="welcome_john">Welcome, John</string>
+    <string name="welcome_john">Welcome</string>
 
     <string name="book_an_appointment">Book an appointment</string>
     <string name="book">Book</string>
@@ -41,7 +41,7 @@
     <string name="no_upcoming_appointments">No upcoming appointments</string>
     <string name="upcoming_appointments2">Upcoming appointments</string>
     <string name="search_for_a_doctor">Search for a doctor</string>
-    <string name="upcoming_appointments3">upcoming_appointments</string>
+    <string name="upcoming_appointments3">record</string>
     <string name="no_upcoming_appointments2">no_upcoming_appointments</string>
     <string name="upcoming_appointmentss">Upcoming appointments</string>
     <string name="no_upcoming_appointmentsss">No upcoming appointments</string>

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class DbHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
     private static final String DATABASE_NAME = "myDoc.db";
 
     //patients table
@@ -138,8 +138,7 @@ public class DbHelper extends SQLiteOpenHelper {
         values.put(COLUMN_FULLNAME, patient.getFullName());
         values.put(COLUMN_EMAIL, patient.getEmail());
 
-        String encryptionKey = patient.getUsername() + patient.getPassword();
-        values.put(COLUMN_PASSWORD, encryptPassword(patient.getPassword(), encryptionKey));
+        values.put(COLUMN_PASSWORD, patient.getPassword());
 
         db.insert(PATIENT_TABLE_NAME, null, values);
         db.close();
@@ -161,8 +160,8 @@ public class DbHelper extends SQLiteOpenHelper {
         values.put(COLUMN_DOC_FULLNAME, doctor.getFullName());
         values.put(COLUMN_DOC_EMAIL, doctor.getEmail());
 
-        String encryptionKey = doctor.getFullName() + doctor.getPassword();
-        values.put(COLUMN_PASSWORD, encryptPassword(doctor.getPassword(), encryptionKey));
+
+        values.put(COLUMN_DOC_PASSWORD, doctor.getPassword());
 
         db.insert(DOCTOR_TABLE_NAME, null, values);
         db.close();
@@ -293,7 +292,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     public String searchPassword(String username) {
         db = this.getReadableDatabase();
-        String query = "select username, password from " + PATIENT_TABLE_NAME;
+        String query = "select fullName, password from " + PATIENT_TABLE_NAME;
         Cursor cursor = db.rawQuery(query, null);
         String uname;
         String pword = "not found";

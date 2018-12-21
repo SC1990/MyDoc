@@ -115,14 +115,10 @@ public class LogIn extends AppCompatActivity {
             //password user typed in at log in screen
             String password = pw.getText().toString().trim();
 
-            //encrypt entered password using username and password entered as a key
-            password = dbHelper.encryptPassword(password, username + password);
 
             //fetch password associated with this username, if it exists
             String passwordToSearch = dbHelper.searchPassword(username);
 
-            //encrypt this password if found using username and password entered as a key
-            dbHelper.encryptPassword(passwordToSearch, username + password);
 
             CheckBox cb = (CheckBox) findViewById(R.id.rememberMeCheckBox);
 
